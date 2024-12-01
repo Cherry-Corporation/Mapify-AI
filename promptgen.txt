@@ -1,0 +1,39 @@
+
+Please create a mind map in the following JSON format for the topic of **{topic_name}**.
+
+The mind map should include:
+
+1. **Main Topic** (centered at the start).
+2. **Key subtopics** that are essential to the topic. For example, in the case of Photosynthesis, the subtopics would include:
+   - **Definition/Overview** of {topic_name}.
+   - **Importance/Significance** of {topic_name}.
+   - **Core Processes** (e.g., if it s Photosynthesis, include subtopics like Light Reaction and Calvin Cycle).
+   - **Examples** related to {topic_name} in real-world applications.
+   - Additional relevant subtopics as necessary.
+   
+Each subtopic should be linked to the main topic with connections (edges) that make sense for the relationships.
+
+The mind map structure should follow this JSON format:
+
+{
+  "mindmap1": {
+    "nodes": [
+      {
+        "id": "main-topic",
+        "label": {"topic_name"},
+        "color": "rgb(83,53,74)",
+        "position": {
+          "x": 500,
+          "y": 300
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "main-topic",
+        "target": "subtopic1"
+      }
+    ]
+  }
+}
+The Main Topic should be the key concept. The Subtopics should represent key aspects or details of the topic (e.g., theories, processes, types, benefits, etc.). Ensure that the nodes are organized clearly with an appropriate distance between them, and edges should indicate logical relationships between concepts.

@@ -1,134 +1,131 @@
 {
     "mindmap1": {
-        "nodes": [
-            {
-                "id": "node1",
-                "label": "Node 1 +edeed",
-                "color": "rgb(83,53,74)",
-                "position": {
-                    "x": 1715.914586388818,
-                    "y": 445.98171218473414
-                }
-            },
-            {
-                "id": "node2",
-                "label": "eeddede",
-                "color": "rgb(233,69,96)",
-                "position": {
-                    "x": 1082.9586145683431,
-                    "y": 5.005021220954253
-                }
-            },
-            {
-                "id": "e041fb0a-4a3c-43d7-bcf4-91fcde76024c",
-                "label": "New Node",
-                "color": "rgb(83,53,74)",
-                "position": {
-                    "x": 1010.2403236586858,
-                    "y": 826.4781964851658
-                }
-            },
-            {
-                "id": "277ec1d3-b03f-4aac-8465-b6c8e31c515e",
-                "label": "New Nodeasasas",
-                "color": "rgb(83,53,74)",
-                "position": {
-                    "x": 644.5018840321861,
-                    "y": 473.2086137886807
-                }
-            },
-            {
-                "id": "910adcf2-bba9-4a44-b71a-6b1970985094",
-                "label": "New Node",
-                "color": "rgb(83,53,74)",
-                "position": {
-                    "x": 502.61168726063653,
-                    "y": 821.175315575303
-                }
-            },
-            {
-                "id": "80ebc7e9-c86c-4f8a-9ac0-3c5ae6ec9c4b",
-                "label": "New Node",
-                "color": "rgb(83,53,74)",
-                "position": {
-                    "x": 1136.2914866621888,
-                    "y": 377.2726134040201
-                }
-            },
-            {
-                "id": "c585fa40-26c6-413e-8b8b-7e6349cd9643",
-                "label": "New Node",
-                "color": "rgb(83,53,74)",
-                "position": {
-                    "x": 1298.3178115013,
-                    "y": 422.26645110140174
-                }
-            },
-            {
-                "id": "908b7fdc-df7d-4bc8-ab88-268ed8688294",
-                "label": "New Node",
-                "color": "rgb(83,53,74)",
-                "position": {
-                    "x": 1051.9713485785985,
-                    "y": 458.624346785853
-                }
-            },
-            {
-                "id": "1c52a112-05e4-4454-a5b8-1cb4be13c9d3",
-                "label": "New Node",
-                "color": "rgb(83,53,74)",
-                "position": {
-                    "x": 894.9547189522173,
-                    "y": 413.1527850792092
-                }
-            },
-            {
-                "id": "ec1f24c1-b67b-4479-b7c4-3228e9f5dba4",
-                "label": "New Node",
-                "color": "rgb(83,53,74)",
-                "position": {
-                    "x": 1155.4716582233177,
-                    "y": 492.38724556310535
-                }
-            }
-        ],
-        "edges": [
-            {
-                "source": "node2",
-                "target": "node1"
-            },
-            {
-                "source": "e041fb0a-4a3c-43d7-bcf4-91fcde76024c",
-                "target": "277ec1d3-b03f-4aac-8465-b6c8e31c515e"
-            },
-            {
-                "source": "277ec1d3-b03f-4aac-8465-b6c8e31c515e",
-                "target": "910adcf2-bba9-4a44-b71a-6b1970985094"
-            },
-            {
-                "source": "277ec1d3-b03f-4aac-8465-b6c8e31c515e",
-                "target": "node2"
-            },
-            {
-                "source": "80ebc7e9-c86c-4f8a-9ac0-3c5ae6ec9c4b",
-                "target": "node2"
-            },
-            {
-                "source": "80ebc7e9-c86c-4f8a-9ac0-3c5ae6ec9c4b",
-                "target": "c585fa40-26c6-413e-8b8b-7e6349cd9643"
-            },
-            {
-                "source": "ec1f24c1-b67b-4479-b7c4-3228e9f5dba4",
-                "target": "80ebc7e9-c86c-4f8a-9ac0-3c5ae6ec9c4b"
-            },
-            {
-                "source": "908b7fdc-df7d-4bc8-ab88-268ed8688294",
-                "target": "80ebc7e9-c86c-4f8a-9ac0-3c5ae6ec9c4b"
-            },
-            {
-                "source": "1c52a112-05e4-4454-a5b8-1cb4be13c9d3",
-                "target": "80ebc7e9-c86c-4f8a-9ac0-3c5ae6ec9c4b"
-            }
-        ]
+      "nodes": [
+        {
+          "id": "photosynthesis",
+          "label": "Photosynthesis",
+          "color": "rgb(83,53,74)",
+          "position": {
+            "x": 500,
+            "y": 300
+          }
+        },
+        {
+          "id": "definition",
+          "label": "What is Photosynthesis?",
+          "color": "rgb(233,69,96)",
+          "position": {
+            "x": 700,
+            "y": 200
+          }
+        },
+        {
+          "id": "importance",
+          "label": "Importance of Photosynthesis",
+          "color": "rgb(27,163,142)",
+          "position": {
+            "x": 700,
+            "y": 400
+          }
+        },
+        {
+          "id": "process",
+          "label": "The Photosynthesis Process",
+          "color": "rgb(42,87,141)",
+          "position": {
+            "x": 1000,
+            "y": 200
+          }
+        },
+        {
+          "id": "light-reaction",
+          "label": "Light Reaction",
+          "color": "rgb(255,204,0)",
+          "position": {
+            "x": 1200,
+            "y": 100
+          }
+        },
+        {
+          "id": "calvin-cycle",
+          "label": "Calvin Cycle",
+          "color": "rgb(124,124,124)",
+          "position": {
+            "x": 1200,
+            "y": 300
+          }
+        },
+        {
+          "id": "sunlight-role",
+          "label": "Role of Sunlight",
+          "color": "rgb(246,84,96)",
+          "position": {
+            "x": 500,
+            "y": 500
+          }
+        },
+        {
+          "id": "chlorophyll",
+          "label": "Chlorophyll Function",
+          "color": "rgb(42,200,142)",
+          "position": {
+            "x": 1000,
+            "y": 500
+          }
+        },
+        {
+          "id": "organisms",
+          "label": "Photosynthesis in Organisms",
+          "color": "rgb(56,183,109)",
+          "position": {
+            "x": 300,
+            "y": 700
+          }
+        },
+        {
+          "id": "examples",
+          "label": "Examples of Photosynthesis",
+          "color": "rgb(189,72,45)",
+          "position": {
+            "x": 500,
+            "y": 900
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "photosynthesis",
+          "target": "definition"
+        },
+        {
+          "source": "photosynthesis",
+          "target": "importance"
+        },
+        {
+          "source": "photosynthesis",
+          "target": "process"
+        },
+        {
+          "source": "process",
+          "target": "light-reaction"
+        },
+        {
+          "source": "process",
+          "target": "calvin-cycle"
+        },
+        {
+          "source": "sunlight-role",
+          "target": "chlorophyll"
+        },
+        {
+          "source": "photosynthesis",
+          "target": "organisms"
+        },
+        {
+          "source": "organisms",
+          "target": "examples"
+        }
+      ]
     }
-}
+  }
+  
