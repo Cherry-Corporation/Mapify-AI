@@ -1,0 +1,65 @@
+{
+    "mindmap1": {
+        "nodes": [
+            {
+                "id": "node1",
+                "label": "Node 1 +edeed",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 235.9928117257917,
+                    "y": 253.99186033655775
+                }
+            },
+            {
+                "id": "node2",
+                "label": "eeddede",
+                "color": "rgb(233,69,96)",
+                "position": {
+                    "x": 1249.949787790455,
+                    "y": 221.99355169519532
+                }
+            },
+            {
+                "id": "e041fb0a-4a3c-43d7-bcf4-91fcde76024c",
+                "label": "New Node",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 1010.2403236586858,
+                    "y": 826.4781964851658
+                }
+            },
+            {
+                "id": "277ec1d3-b03f-4aac-8465-b6c8e31c515e",
+                "label": "New Node",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 644.5018840321861,
+                    "y": 473.2086137886807
+                }
+            },
+            {
+                "id": "910adcf2-bba9-4a44-b71a-6b1970985094",
+                "label": "New Node",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 502.61168726063653,
+                    "y": 821.175315575303
+                }
+            }
+        ],
+        "edges": [
+            {
+                "source": "node2",
+                "target": "node1"
+            },
+            {
+                "source": "e041fb0a-4a3c-43d7-bcf4-91fcde76024c",
+                "target": "277ec1d3-b03f-4aac-8465-b6c8e31c515e"
+            },
+            {
+                "source": "277ec1d3-b03f-4aac-8465-b6c8e31c515e",
+                "target": "910adcf2-bba9-4a44-b71a-6b1970985094"
+            }
+        ]
+    }
+}

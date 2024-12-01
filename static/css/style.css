@@ -1,0 +1,117 @@
+/* style.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    display: flex;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 300px;
+    background-color: #34495e;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+
+#sidebar input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+
+#sidebar button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #16a085;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#sidebar button:hover {
+    background-color: #1abc9c;
+}
+
+#mindmaps-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#mindmaps-list li {
+    cursor: pointer;
+    padding: 12px;
+    background-color: #2c3e50;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#mindmaps-list li:hover {
+    background-color: #16a085;
+}
+
+/* Color Palette */
+.color-palette {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.color-palette div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.color-palette div:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Main Canvas */
+#cy {
+    flex-grow: 1;
+    height: 100%;
+    position: relative;
+}
+
+/* Messages */
+#message {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Theme */
+.dark-theme {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
