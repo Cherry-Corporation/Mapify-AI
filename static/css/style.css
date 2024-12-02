@@ -1,117 +1,212 @@
-/* style.css */
-
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2c3e50;
-    color: #ecf0f1;
     display: flex;
     height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.6;
 }
 
-h1 {
-    font-size: 24px;
-    margin: 0;
+/* Light Theme */
+body.light-theme {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #0b0b0d;
+    color: #e0e0e0;
 }
 
 /* Sidebar */
 #sidebar {
-    width: 300px;
-    background-color: #34495e;
-    padding: 20px;
+    width: 280px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1);
     height: 100%;
+    transition: background-color 0.3s, color 0.3s;
+    overflow-y: auto;
+    border-right: 1px solid #444444;
+}
+
+body.light-theme #sidebar {
+    background-color: #f5f7fa;
+    color: #333333;
+}
+
+body.dark-theme #sidebar {
+    background-color: #16171a;
+    color: #d1d1d1;
 }
 
 #sidebar input[type="text"] {
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    border-radius: 5px;
-    border: 1px solid #bdc3c7;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+body.dark-theme #sidebar input[type="text"] {
+    background-color: #25262a;
+    color: #ffffff;
+    border: 1px solid #555555;
 }
 
 #sidebar button {
-    padding: 12px;
+    padding: 12px 18px;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
-    background-color: #16a085;
-    color: white;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 #sidebar button:hover {
-    background-color: #1abc9c;
+    transform: translateY(-2px);
 }
 
-#mindmaps-list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
+body.light-theme #sidebar button {
+    background-color: #4e73df;
+    color: #ffffff;
 }
 
-#mindmaps-list li {
-    cursor: pointer;
-    padding: 12px;
-    background-color: #2c3e50;
-    margin: 5px 0;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-#mindmaps-list li:hover {
-    background-color: #16a085;
-}
-
-/* Color Palette */
-.color-palette {
-    display: flex;
-    margin-top: 20px;
-    gap: 10px;
-}
-
-.color-palette div {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.color-palette div:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+body.dark-theme #sidebar button {
+    background-color: #28a745;
+    color: #ffffff;
 }
 
 /* Main Canvas */
 #cy {
     flex-grow: 1;
     height: 100%;
-    position: relative;
+    background-color: #f4f5f7;
+    border-left: 1px solid #ccc;
+    transition: background-color 0.3s;
 }
 
-/* Messages */
+body.dark-theme #cy {
+    background-color: #101114;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    width: 120px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme #theme-toggle {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+body.dark-theme #theme-toggle {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+#theme-toggle:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Export Buttons */
+.export-buttons {
+    position: fixed;
+    top: 20px;
+    right: 160px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.export-buttons button {
+    padding: 10px 14px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 120px;
+    height: 48px;
+    text-align: center;
+}
+
+.export-buttons button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .export-buttons button {
+    background-color: #1abc9c;
+}
+
+body.dark-theme .export-buttons button:hover {
+    background-color: #16a085;
+}
+
+/* Floating Popup Messages */
 #message {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    padding: 10px;
-    background-color: #4caf50;
-    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
     display: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    font-size: 14px;
+    max-width: 300px;
+    z-index: 1000;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
 }
 
-/* Dark Theme */
-.dark-theme {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+#message.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body.light-theme #message {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+body.dark-theme #message {
+    background-color: #0f766e;
+    color: #ffffff;
+}
+
+/* Hover Effects */
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.3);
 }

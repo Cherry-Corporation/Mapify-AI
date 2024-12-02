@@ -1,131 +1,316 @@
 {
     "mindmap1": {
-      "nodes": [
-        {
-          "id": "photosynthesis",
-          "label": "Photosynthesis",
-          "color": "rgb(83,53,74)",
-          "position": {
-            "x": 500,
-            "y": 300
-          }
-        },
-        {
-          "id": "definition",
-          "label": "What is Photosynthesis?",
-          "color": "rgb(233,69,96)",
-          "position": {
-            "x": 700,
-            "y": 200
-          }
-        },
-        {
-          "id": "importance",
-          "label": "Importance of Photosynthesis",
-          "color": "rgb(27,163,142)",
-          "position": {
-            "x": 700,
-            "y": 400
-          }
-        },
-        {
-          "id": "process",
-          "label": "The Photosynthesis Process",
-          "color": "rgb(42,87,141)",
-          "position": {
-            "x": 1000,
-            "y": 200
-          }
-        },
-        {
-          "id": "light-reaction",
-          "label": "Light Reaction",
-          "color": "rgb(255,204,0)",
-          "position": {
-            "x": 1200,
-            "y": 100
-          }
-        },
-        {
-          "id": "calvin-cycle",
-          "label": "Calvin Cycle",
-          "color": "rgb(124,124,124)",
-          "position": {
-            "x": 1200,
-            "y": 300
-          }
-        },
-        {
-          "id": "sunlight-role",
-          "label": "Role of Sunlight",
-          "color": "rgb(246,84,96)",
-          "position": {
-            "x": 500,
-            "y": 500
-          }
-        },
-        {
-          "id": "chlorophyll",
-          "label": "Chlorophyll Function",
-          "color": "rgb(42,200,142)",
-          "position": {
-            "x": 1000,
-            "y": 500
-          }
-        },
-        {
-          "id": "organisms",
-          "label": "Photosynthesis in Organisms",
-          "color": "rgb(56,183,109)",
-          "position": {
-            "x": 300,
-            "y": 700
-          }
-        },
-        {
-          "id": "examples",
-          "label": "Examples of Photosynthesis",
-          "color": "rgb(189,72,45)",
-          "position": {
-            "x": 500,
-            "y": 900
-          }
-        }
-      ],
-      "edges": [
-        {
-          "source": "photosynthesis",
-          "target": "definition"
-        },
-        {
-          "source": "photosynthesis",
-          "target": "importance"
-        },
-        {
-          "source": "photosynthesis",
-          "target": "process"
-        },
-        {
-          "source": "process",
-          "target": "light-reaction"
-        },
-        {
-          "source": "process",
-          "target": "calvin-cycle"
-        },
-        {
-          "source": "sunlight-role",
-          "target": "chlorophyll"
-        },
-        {
-          "source": "photosynthesis",
-          "target": "organisms"
-        },
-        {
-          "source": "organisms",
-          "target": "examples"
-        }
-      ]
+        "nodes": [
+            {
+                "id": "ww2",
+                "label": "World War II",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 500,
+                    "y": 300
+                }
+            },
+            {
+                "id": "definition-overview",
+                "label": "Definition/Overview",
+                "color": "rgb(72,61,139)",
+                "position": {
+                    "x": 250,
+                    "y": 100
+                }
+            },
+            {
+                "id": "global-conflict",
+                "label": "Global Conflict Involving Over 30 Countries",
+                "color": "rgb(72,61,139)",
+                "position": {
+                    "x": 250,
+                    "y": 200
+                }
+            },
+            {
+                "id": "causes",
+                "label": "Causes of WW2",
+                "color": "rgb(139,69,19)",
+                "position": {
+                    "x": 150,
+                    "y": 350
+                }
+            },
+            {
+                "id": "treaty-of-versailles",
+                "label": "Treaty of Versailles (1919)",
+                "color": "rgb(139,69,19)",
+                "position": {
+                    "x": 150,
+                    "y": 450
+                }
+            },
+            {
+                "id": "expansionism",
+                "label": "Aggressive Expansionism (Germany, Italy, Japan)",
+                "color": "rgb(139,69,19)",
+                "position": {
+                    "x": 150,
+                    "y": 550
+                }
+            },
+            {
+                "id": "fascism-and-communism",
+                "label": "Rise of Fascism & Communism",
+                "color": "rgb(139,69,19)",
+                "position": {
+                    "x": 150,
+                    "y": 650
+                }
+            },
+            {
+                "id": "key-figures",
+                "label": "Key Figures",
+                "color": "rgb(255,99,71)",
+                "position": {
+                    "x": 650,
+                    "y": 100
+                }
+            },
+            {
+                "id": "hitler",
+                "label": "Adolf Hitler",
+                "color": "rgb(255,99,71)",
+                "position": {
+                    "x": 847.9704886562628,
+                    "y": 81.01773661568042
+                }
+            },
+            {
+                "id": "churchill",
+                "label": "Winston Churchill",
+                "color": "rgb(255,99,71)",
+                "position": {
+                    "x": 915.9603534473026,
+                    "y": 190.01639519096508
+                }
+            },
+            {
+                "id": "roosevelt",
+                "label": "Franklin D. Roosevelt",
+                "color": "rgb(255,99,71)",
+                "position": {
+                    "x": 748.9852443281314,
+                    "y": 263.0204194651111
+                }
+            },
+            {
+                "id": "stalin",
+                "label": "Joseph Stalin",
+                "color": "rgb(255,99,71)",
+                "position": {
+                    "x": 619.0046204629084,
+                    "y": 272.0339827594549
+                }
+            },
+            {
+                "id": "major-battles",
+                "label": "Major Battles and Campaigns",
+                "color": "rgb(0,128,128)",
+                "position": {
+                    "x": 350,
+                    "y": 400
+                }
+            },
+            {
+                "id": "battle-of-stalingrad",
+                "label": "Battle of Stalingrad (1942-1943)",
+                "color": "rgb(0,128,128)",
+                "position": {
+                    "x": 350,
+                    "y": 500
+                }
+            },
+            {
+                "id": "d-day",
+                "label": "D-Day Invasion (Normandy, 1944)",
+                "color": "rgb(0,128,128)",
+                "position": {
+                    "x": 350,
+                    "y": 600
+                }
+            },
+            {
+                "id": "battle-of-midway",
+                "label": "Battle of Midway (1942)",
+                "color": "rgb(0,128,128)",
+                "position": {
+                    "x": 350,
+                    "y": 700
+                }
+            },
+            {
+                "id": "atomic-bomb",
+                "label": "Atomic Bombs (Hiroshima & Nagasaki, 1945)",
+                "color": "rgb(0,128,128)",
+                "position": {
+                    "x": 350,
+                    "y": 800
+                }
+            },
+            {
+                "id": "end-of-ww2",
+                "label": "End of WW2",
+                "color": "rgb(255,69,0)",
+                "position": {
+                    "x": 800,
+                    "y": 400
+                }
+            },
+            {
+                "id": "axis-surrender",
+                "label": "Axis Powers Surrender (1945)",
+                "color": "rgb(255,69,0)",
+                "position": {
+                    "x": 800,
+                    "y": 500
+                }
+            },
+            {
+                "id": "united-nations",
+                "label": "Formation of the United Nations",
+                "color": "rgb(255,69,0)",
+                "position": {
+                    "x": 800,
+                    "y": 600
+                }
+            },
+            {
+                "id": "impact",
+                "label": "Impact of WW2",
+                "color": "rgb(34,139,34)",
+                "position": {
+                    "x": 500,
+                    "y": 700
+                }
+            },
+            {
+                "id": "social-changes",
+                "label": "Social Changes (Women, Civil Rights, etc.)",
+                "color": "rgb(34,139,34)",
+                "position": {
+                    "x": 500,
+                    "y": 800
+                }
+            },
+            {
+                "id": "economic-repercussions",
+                "label": "Economic Repercussions (Marshall Plan, Recovery)",
+                "color": "rgb(34,139,34)",
+                "position": {
+                    "x": 500,
+                    "y": 900
+                }
+            },
+            {
+                "id": "new-world-order",
+                "label": "Creation of a New World Order",
+                "color": "rgb(34,139,34)",
+                "position": {
+                    "x": 500,
+                    "y": 1000
+                }
+            }
+        ],
+        "edges": [
+            {
+                "source": "ww2",
+                "target": "definition-overview"
+            },
+            {
+                "source": "definition-overview",
+                "target": "global-conflict"
+            },
+            {
+                "source": "ww2",
+                "target": "causes"
+            },
+            {
+                "source": "causes",
+                "target": "treaty-of-versailles"
+            },
+            {
+                "source": "causes",
+                "target": "expansionism"
+            },
+            {
+                "source": "causes",
+                "target": "fascism-and-communism"
+            },
+            {
+                "source": "ww2",
+                "target": "key-figures"
+            },
+            {
+                "source": "key-figures",
+                "target": "hitler"
+            },
+            {
+                "source": "key-figures",
+                "target": "churchill"
+            },
+            {
+                "source": "key-figures",
+                "target": "roosevelt"
+            },
+            {
+                "source": "key-figures",
+                "target": "stalin"
+            },
+            {
+                "source": "ww2",
+                "target": "major-battles"
+            },
+            {
+                "source": "major-battles",
+                "target": "battle-of-stalingrad"
+            },
+            {
+                "source": "major-battles",
+                "target": "d-day"
+            },
+            {
+                "source": "major-battles",
+                "target": "battle-of-midway"
+            },
+            {
+                "source": "major-battles",
+                "target": "atomic-bomb"
+            },
+            {
+                "source": "ww2",
+                "target": "end-of-ww2"
+            },
+            {
+                "source": "end-of-ww2",
+                "target": "axis-surrender"
+            },
+            {
+                "source": "end-of-ww2",
+                "target": "united-nations"
+            },
+            {
+                "source": "ww2",
+                "target": "impact"
+            },
+            {
+                "source": "impact",
+                "target": "social-changes"
+            },
+            {
+                "source": "impact",
+                "target": "economic-repercussions"
+            },
+            {
+                "source": "impact",
+                "target": "new-world-order"
+            }
+        ]
     }
-  }
-  
+}

@@ -6,19 +6,16 @@
     <title>Mind Map Editor</title>
     <link href="/static/css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="dark-theme">
     <div id="sidebar">
         <h1>Mind Map Editor</h1>
 
-        <!-- Input for Mind Map Name and Save Button -->
         <input type="text" id="mindmap-name" placeholder="Enter mind map name" />
         <button onclick="saveMindmap()">Save Mind Map</button>
 
-        <!-- List of Saved Mind Maps -->
         <h3>Saved Mind Maps</h3>
         <ul id="mindmaps-list"></ul>
 
-        <!-- Color Palette for Node Selection -->
         <div class="color-palette">
             <div style="background-color: #6a1b9a;" onclick="selectColor('#6a1b9a')"></div>
             <div style="background-color: #2980b9;" onclick="selectColor('#2980b9')"></div>
@@ -28,22 +25,18 @@
         </div>
     </div>
 
-    <!-- Cytoscape Container -->
-    <div id="cy" style="height: 80vh; width: 70%;"></div>
+    <div id="cy"></div>
 
-    <!-- Message Display Area -->
     <div id="message"></div>
 
-    <!-- Node Edit Modal (Inside Page Modal) -->
-    <div id="node-modal" style="display:none;">
-        <label for="node-label">Node Label:</label>
-        <input type="text" id="node-label" />
-        <div id="color-palette"></div>
-        <button onclick="saveNodeLabel()">Save</button>
-        <button onclick="closeNodeModal()">Close</button>
+    <button id="theme-toggle">Toggle Theme</button>
+    <div class="export-buttons">
+        <button id="export-png">Export as PNG</button>
+        <button id="export-jpeg">Export as JPEG</button>
     </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.22.1/cytoscape.min.js"></script>
-    <script src="static/mindmap.js"></script>
+    <script src="/static/mindmap.js"></script>
 </body>
 </html>
