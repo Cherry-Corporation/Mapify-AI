@@ -12,7 +12,7 @@ let cy = cytoscape({
                 'width': 'label',
                 'height': 'label',
                 'padding': '10px',
-                'shape': 'ellipse',
+                'shape': 'roundrectangle',
                 'font-size': '12px',
                 'border-width': '2px',
                 'border-color': '#e94560',
@@ -31,6 +31,7 @@ let cy = cytoscape({
     wheelSensitivity: 0.1,
     userPanningEnabled: true,
 });
+
 
 let selectedNode = null;
 let firstNode = null;
