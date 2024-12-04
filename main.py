@@ -6,7 +6,6 @@ app = Flask(__name__)
 DATA_FILE = "mindmaps.json"
 FRONTEND_DIR = os.path.join(os.path.dirname(__file__), "templates")
 
-# Enable Cross-Origin Resource Sharing (CORS) if needed for separate frontend/backend setups
 from flask_cors import CORS
 CORS(app)
 
