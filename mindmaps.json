@@ -463,5 +463,215 @@
                 "target": "subtopic5"
             }
         ]
+    },
+    "ww2": {
+        "nodes": [
+            {
+                "id": "main-topic",
+                "label": "world war 2",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 460.0059618876237,
+                    "y": 422.98166719555724
+                }
+            },
+            {
+                "id": "subtopic1",
+                "label": "Causes of World War 2",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 269.69645659245265,
+                    "y": 355.54327136300714
+                }
+            },
+            {
+                "id": "subtopic2",
+                "label": "Key Events of World War 2",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 422.83064998290996,
+                    "y": 200.60088510184127
+                }
+            },
+            {
+                "id": "subtopic3",
+                "label": "Major Players in World War 2",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 637.2486909343431,
+                    "y": 426.2935587157431
+                }
+            },
+            {
+                "id": "subtopic4",
+                "label": "Consequences of World War 2",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 925.40737560767,
+                    "y": 551.1418930925792
+                }
+            },
+            {
+                "id": "subtopic5",
+                "label": "Importance/Significance of World War 2",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 110.95513221860007,
+                    "y": 89.883429627651
+                }
+            },
+            {
+                "id": "subtopic6",
+                "label": "Examples of World War 2 in Real-World Applications",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 600,
+                    "y": 600
+                }
+            },
+            {
+                "id": "subtopic7",
+                "label": "Definition/Overview of World War 2",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 277.00342808538363,
+                    "y": 591.0311508628336
+                }
+            },
+            {
+                "id": "subtopic8",
+                "label": "Pre-War Tensions and Diplomacy",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 38.85645044905276,
+                    "y": 266.87844986167926
+                }
+            },
+            {
+                "id": "subtopic9",
+                "label": "The War in Europe",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 719.8908543227699,
+                    "y": 135.20559010181717
+                }
+            },
+            {
+                "id": "subtopic10",
+                "label": "The War in the Pacific",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 669.0796928704897,
+                    "y": 290.89379230000117
+                }
+            },
+            {
+                "id": "subtopic11",
+                "label": "Major Battles and Campaigns",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 913.2104933569359,
+                    "y": 305.8829089151573
+                }
+            },
+            {
+                "id": "subtopic12",
+                "label": "Key Leaders and Figures",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 442.14340518189823,
+                    "y": 62.7036878038351
+                }
+            },
+            {
+                "id": "subtopic13",
+                "label": "War Crimes and Atrocities",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 647.0228042201605,
+                    "y": 712.9980623865223
+                }
+            },
+            {
+                "id": "subtopic14",
+                "label": "Home Fronts and War Effort",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 215.05738316837775,
+                    "y": 707.0436708268434
+                }
+            },
+            {
+                "id": "subtopic15",
+                "label": "Peace Treaties and Aftermath",
+                "color": "rgb(83,53,74)",
+                "position": {
+                    "x": 125.4073756076701,
+                    "y": 447.6447819221092
+                }
+            }
+        ],
+        "edges": [
+            {
+                "source": "main-topic",
+                "target": "subtopic1"
+            },
+            {
+                "source": "main-topic",
+                "target": "subtopic2"
+            },
+            {
+                "source": "main-topic",
+                "target": "subtopic3"
+            },
+            {
+                "source": "main-topic",
+                "target": "subtopic4"
+            },
+            {
+                "source": "main-topic",
+                "target": "subtopic5"
+            },
+            {
+                "source": "main-topic",
+                "target": "subtopic6"
+            },
+            {
+                "source": "main-topic",
+                "target": "subtopic7"
+            },
+            {
+                "source": "subtopic1",
+                "target": "subtopic8"
+            },
+            {
+                "source": "subtopic2",
+                "target": "subtopic9"
+            },
+            {
+                "source": "subtopic3",
+                "target": "subtopic10"
+            },
+            {
+                "source": "subtopic4",
+                "target": "subtopic11"
+            },
+            {
+                "source": "subtopic5",
+                "target": "subtopic12"
+            },
+            {
+                "source": "subtopic6",
+                "target": "subtopic13"
+            },
+            {
+                "source": "subtopic7",
+                "target": "subtopic14"
+            },
+            {
+                "source": "subtopic8",
+                "target": "subtopic15"
+            }
+        ]
     }
 }
