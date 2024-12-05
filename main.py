@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify, send_from_directory
 import os
 import json
+import requests
 
 app = Flask(__name__)
 DATA_FILE = "mindmaps.json"
@@ -82,6 +83,90 @@ def list_mindmaps():
     except Exception as e:
         log_debug(f"Error listing mind maps: {str(e)}", "red")
         return jsonify({"message": f"Error listing mind maps: {str(e)}"}), 500
+
+
+
+OLLAMA_API_URL = "http://localhost:11434/api/generate"  # Adjust if Ollama's API URL is different
+
+@app.route('/generate-mindmap', methods=['POST'])
+def generate_mindmap():
+    try:
+        # Get the topic from the request JSON
+        data = request.json
+        topic_name = data.get("topic", "").strip()
+
+        if not topic_name:
+            return jsonify({"success": False, "message": "Topic is required."}), 400
+
+        # Prepare the prompt with the topic
+        prompt = f"""
+        Please create a mind map in the following JSON format for the topic of **{topic_name}**.
+
+        The mind map should include:
+
+        1. **Main Topic** (centered at the start).
+        2. **Key subtopics** that are essential to the topic. For example, in the case of Photosynthesis, the subtopics would include:
+           - **Definition/Overview** of {topic_name}.
+           - **Importance/Significance** of {topic_name}.
+           - **Core Processes** (e.g., if it's Photosynthesis, include subtopics like Light Reaction and Calvin Cycle).
+           - **Examples** related to {topic_name} in real-world applications.
+           - Additional relevant subtopics as necessary.
+
+        Each subtopic should be linked to the main topic with connections (edges) that make sense for the relationships.
+
+        The mind map structure should follow this JSON format:
+
+        {{
+          "mindmap": {{
+            "nodes": [
+              {{
+                "id": "main-topic",
+                "label": "{topic_name}",
+                "color": "rgb(83,53,74)",
+                "position": {{
+                  "x": 500,
+                  "y": 300
+                }}
+              }}
+            ],
+            "edges": [
+              {{
+                "source": "main-topic",
+                "target": "subtopic1"
+              }}
+            ]
+          }}
+        }}
+
+        Ensure that the nodes are organized clearly with an appropriate distance between them, and edges indicate logical relationships between concepts.ALSO JUST PUT THE JSON NO TEXT BEFORE!!
+        """
+
+        # Send request to Ollama API
+        headers = {'Content-Type': 'application/json'}
+        request_data = {
+            "model": "llama3.1:8b",
+            "prompt": prompt,
+            "stream": False
+        }
+
+        response = requests.post(OLLAMA_API_URL, headers=headers, data=json.dumps(request_data))
+        
+        # Check the response status and handle it
+        if response.status_code == 200:
+            response_data = response.json()
+
+            if "response" in response_data:
+                mindmap_json = response_data["response"]
+                return jsonify({"done": True, "mindmap": mindmap_json}), 200
+            else:
+                return jsonify({"done": False, "message": "Failed to generate mind map."}), 500
+        else:
+            return jsonify({"done": False, "message": f"Error: {response.status_code}, {response.text}"}), 500
+
+    except requests.exceptions.RequestException as e:
+        return jsonify({"success": False, "message": f"Network error: {str(e)}"}), 500
+    except Exception as e:
+        return jsonify({"success": False, "message": f"Internal server error: {str(e)}"}), 500
 
 if __name__ == "__main__":
     app.run(debug=True)
