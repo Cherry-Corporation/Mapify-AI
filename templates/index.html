@@ -16,6 +16,7 @@
         <h3>Saved Mind Maps</h3>
         <ul id="mindmaps-list"></ul>
 
+        <!-- Color Palette -->
         <div class="color-palette">
             <div style="background-color: #6a1b9a;" onclick="selectColor('#6a1b9a')"></div>
             <div style="background-color: #2980b9;" onclick="selectColor('#2980b9')"></div>
@@ -23,22 +24,24 @@
             <div style="background-color: #f39c12;" onclick="selectColor('#f39c12')"></div>
             <div style="background-color: #e74c3c;" onclick="selectColor('#e74c3c')"></div>
         </div>
-    </div>
-    <div id="chat-box">
-        <input type="text" id="topic-input" placeholder="Enter topic for mind map" />
-        <button id="generate-mindmap">Generate Mind Map</button>
+
+        <!-- AI Generated Maps Section -->
+        <div id="ai-generated-section">
+            <h3>AI Generated Maps</h3>
+            <input type="text" id="topic-input" placeholder="Enter topic for mind map" />
+            <button id="generate-mindmap">Generate Map</button>
+            <div id="ai-map-list">
+                <!-- AI-generated maps list will appear here -->
+            </div>
+        </div>
     </div>
     
     <div id="cy"></div>
-
-    <div id="message"></div>
-
     <button id="theme-toggle">Toggle Theme</button>
     <div class="export-buttons">
         <button id="export-png">Export as PNG</button>
         <button id="export-jpeg">Export as JPEG</button>
     </div>
-    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.22.1/cytoscape.min.js"></script>
     <script src="/static/mindmap.js"></script>
