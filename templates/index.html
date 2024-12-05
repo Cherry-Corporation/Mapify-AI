@@ -24,7 +24,11 @@
             <div style="background-color: #e74c3c;" onclick="selectColor('#e74c3c')"></div>
         </div>
     </div>
-
+    <div id="chat-box">
+        <input type="text" id="topic-input" placeholder="Enter topic for mind map" />
+        <button id="generate-mindmap">Generate Mind Map</button>
+    </div>
+    
     <div id="cy"></div>
 
     <div id="message"></div>
@@ -38,7 +42,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.22.1/cytoscape.min.js"></script>
     <script src="/static/mindmap.js"></script>
-
+    <script src="/static/ai-gen.js"></script>
     <script>
         // Toggle theme function
         document.getElementById('theme-toggle').addEventListener('click', function() {
