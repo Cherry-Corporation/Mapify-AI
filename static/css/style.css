@@ -210,3 +210,77 @@ button:focus {
     outline: none;
     box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.3);
 }
+/* AI Generated Section */
+#ai-generated-section {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme #ai-generated-section {
+    background-color: #25262a;
+    color: #d1d1d1;
+}
+
+#ai-generated-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#ai-map-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#ai-map-list .map-item {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+body.dark-theme #ai-map-list .map-item {
+    background-color: #333;
+    border: 1px solid #555;
+}
+
+#ai-map-list .map-item:hover {
+    background-color: #f1f1f1;
+}
+
+body.dark-theme #ai-map-list .map-item:hover {
+    background-color: #444;
+}
+
+#generate-map-button {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #ff8c00;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#generate-map-button:hover {
+    background-color: #e57d00;
+}
+
+body.dark-theme #generate-map-button {
+    background-color: #e57d00;
+}
+
+body.dark-theme #generate-map-button:hover {
+    background-color: #d46a00;
+}
