@@ -137,7 +137,7 @@ function createEdge(node1, node2) {
 }
 
 // Keyboard controls
-document.addEventListener('keydown', (event) => {
+/*document.addEventListener('keydown', (event) => {
     const { key } = event;
 
     if (key === 'n') {
@@ -156,7 +156,7 @@ document.addEventListener('keydown', (event) => {
         // Edit the selected node's label
         openEditPopup(selectedNode);
     }
-});
+});*/
 
 // Add the message element for user feedback
 const messageElement = document.createElement('div');
