@@ -1,5 +1,7 @@
 # AI-Based Mind Map Generator
 
+DISCLAIMER!!! Ai has benn used in this project (copilot for coding and chat gpt for readme)
+
 This project provides a tool for generating mind maps using AI. It allows users to create, edit, and visualize their ideas in an interactive mind map format. This tool will be powered by ai!
 
 ## Features
